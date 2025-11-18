@@ -1,0 +1,26 @@
+               Basic firewall rules to allow or block traffic
+
+
+UFW is a simplified interface for iptables/netfilter.
+
+It applies allow/deny rules to network packets.
+
+Rules are checked in order, matching:
+
+Port number
+
+IP address
+
+Protocol (TCP/UDP)
+
+Direction (incoming/outgoing)
+
+
+Firewall rules applied
+
+sudo ufw enable
+sudo ufw status numbered
+sudo ufw deny 23
+telnet localhost 23   (or nc -v localhost 23)
+sudo ufw allow 22
+sudo ufw delete deny 23
